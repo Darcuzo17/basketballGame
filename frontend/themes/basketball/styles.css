@@ -1,0 +1,21 @@
+html {
+  --lumo-primary-color: #e8590c;
+  --lumo-primary-text-color: #e8590c;
+  --lumo-primary-color-50pct: rgba(232, 89, 12, 0.5);
+  --lumo-primary-color-10pct: rgba(232, 89, 12, 0.1);
+}
+
+.auth-view {
+  background: var(--lumo-contrast-5pct);
+}
+
+.auth-card {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* Свой клуб в таблице чемпионата */
+vaadin-grid::part(my-club) {
+  font-weight: 700;
+  background: var(--lumo-primary-color-10pct);
+}
