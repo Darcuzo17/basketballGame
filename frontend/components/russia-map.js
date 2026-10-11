@@ -231,10 +231,10 @@ class RussiaMap extends HTMLElement {
   _bindGestures() {
     const svg = this._svg;
 
-    svg.addEventListener('wheel', e => {
+    /*svg.addEventListener('wheel', e => {
       e.preventDefault();
       this._zoomAt(e.clientX, e.clientY, Math.exp(-e.deltaY * 0.0015));
-    }, { passive: false });
+    }, { passive: false });*/
 
     svg.addEventListener('pointerdown', e => {
       this._pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
